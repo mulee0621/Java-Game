@@ -1,28 +1,17 @@
-package gamePractice;
+//gamePractice01.java
 
-import javax.swing.JOptionPane;
+package gamePractice;
 
 public class gamePractice01 {
 
     public static void main(String[] args) {
+    	Slime.name = "Slammi";
+    	Slime.hp = 100;
     	
-    	int birthYear = Integer.parseInt(JOptionPane.showInputDialog("Type your birth year."));
-    	
-    	int currentYear = Integer.parseInt(JOptionPane.showInputDialog("What is current year?"));
-    	
-    	int age = currentYear - birthYear + 1;
-        
-        JOptionPane.showMessageDialog(null, "Your age is " + age);
-        
-        //with more option
-        
-        if(age >= 20) {
-        	JOptionPane.showMessageDialog(null, "You are adult");
-        } else if (age >= 15) {
-        	JOptionPane.showMessageDialog(null, "You are youth");
-        } else {
-        	JOptionPane.showMessageDialog(null, "You are kid");	
-        }   
+    	System.out.println("The name of slime is " + Slime.name);
+    	System.out.println("The Hp of " + Slime.name + " is " + Slime.hp);
+
+    	Slime.attack();
     }
  
 }

@@ -4,13 +4,17 @@ package gamePractice;
 
 public class Slime {
 	
-	static String name;
-	static int hp;
+	String name;
+	int hp = 80;
 	
-	public static void attack() {
-		
-		System.out.println(name + " attacked a human.");
-		
+	//creater
+	public Slime(String n) {
+		name = n;	
+	}
+	
+	//attack
+	public void attack() {
+		System.out.println(name + " attacked a human.");	
 	}
 
 }
